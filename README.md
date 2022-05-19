@@ -28,6 +28,12 @@ uncensored patriarch shops grotesquely
 
 ## Usage
 
+When running the tool from the cloned source, leverage the helper script in the root directory. Example:
+
+```
+mempg.sh -l4 -p 10
+```
+
 The tool accepts two optional parameters:
 
 ```
@@ -37,10 +43,6 @@ The tool accepts two optional parameters:
 ```
 
 Each run will generate 1 passphrase, and the entropy for that phrase will be displayed. This entropy number is a simple calculation based on the length of the input wordlists for each word.
-
-This repository is set up in an installable fashion, so you can either:
-
-1. Just run it from the local directory, using the
 
 ## Sources
 
