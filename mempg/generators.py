@@ -45,6 +45,7 @@ class Generator:
 
     def __init__(self, length, add_num=False):
         self.add_num = add_num
+        self.phrase = ""
 
         # first select the format options for this length
         choices = fmt_options.get(length, None)
