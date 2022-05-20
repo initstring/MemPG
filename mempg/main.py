@@ -1,3 +1,10 @@
+"""
+Main module for MemPR
+
+https://github.com/initstring/mempg
+MIT License
+"""
+
 import sys
 import argparse
 
