@@ -23,7 +23,16 @@ fmt_options = {
         ],
     4: [
         "adjective noun verb-present adverb"
-    ]
+    ],
+    5: [
+        "noun verb-present adverb preposition noun"
+    ],
+    6: [
+        "adjective noun verb-present adverb preposition noun"
+    ],
+    7: [
+        "adjective noun verb-present adverb preposition verb-continuous noun"
+    ],
 }
 
 
