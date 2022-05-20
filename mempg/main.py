@@ -1,3 +1,10 @@
+"""
+Main module for MemPR
+
+https://github.com/initstring/mempg
+MIT License
+"""
+
 import sys
 import argparse
 
@@ -36,7 +43,7 @@ def main():
     print(f"bits of entropy: {generator.entropy}")
     print("-----------------------")
 
-    for i in range(0, args.phrases):
+    for _ in range(0, args.phrases):
         generator.make_pass()
         print(generator.phrase)
 

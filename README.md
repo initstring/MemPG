@@ -15,16 +15,23 @@ Then, we randomly select the correct word type from word-lists organized by part
 Here are some real examples generated with this tool:
 
 ````
+# 28 bits of entropy:
+stormbound jitters
+
+# 40 bits of entropy:
+neglectfully unpasteurized indoctrination
+
+# 52 bits of entropy:
 uncensored patriarch shops grotesquely
+
+# 61 bits of entropy:
+tricycle trawls covertly outside saipan
+
+# 87 bits of entropy:
+powered monarchist digitizes permissibly beneath revalueing offer
+
+(... more to come, still a work in progress)
 ````
-
-**TO DO**:
-- [X] Basic working PoC
-- [ ] Build phrase format up to 8 words
-- [ ] Review / improve wordlists
-- [ ] Publish on PyPI (maybe)
-
-
 
 ## Usage
 
@@ -34,7 +41,7 @@ When running the tool from the cloned source, leverage the helper script in the 
 mempg.sh -l4 -p 10
 ```
 
-The tool accepts two optional parameters:
+The tool accepts three optional parameters:
 
 ```
   -l LENGTH, --length LENGTH    Length of passphrase to generate. Default: 6
@@ -42,7 +49,13 @@ The tool accepts two optional parameters:
   -p PHRASES, --phrases PHRASES How many phrases to generate. Default: 1
 ```
 
-Each run will generate 1 passphrase, and the entropy for that phrase will be displayed. This entropy number is a simple calculation based on the length of the input wordlists for each word.
+Each run will generate a simply entropy calculation, based on the length of the input wordlists for each word selected.
+
+## Contributing
+
+Please open an issue to start a discussion on any major contributions. For any small fixes, just submit a PR. Thank you!
+
+Right now, I am particularly interesting in help with making the phrases sound more natural. This might include improving/curating some of the wordlists, as well as modifying or adding additional phrase formats as defined in `fmt_options` in `generators.py`.
 
 ## Sources
 
@@ -53,11 +66,13 @@ I've sourced the word-lists from the following locations:
     - adverbs
     - adjectives
     - verbs
+- Wikipedia:
+    - [prepositions](https://en.wikipedia.org/wiki/List_of_English_prepositions) (prototypical, conjunctive)
 
 ## Warnings
 
-Please don't bet your life or your money on my crappy Python script. I'm just some guy on the Internet, hobbling code together and crossing my fingers.
+Please don't bet your life or your money on my crappy Python script without fully understanding what it is doing. I'm just some guy on the Internet, hobbling code together and crossing my fingers.
 
-Obviously, the shorter the phrase, the less safe it is. The tool will allow you to create 2-word phrases. I figured these might be handy for random usernames or something.
+Human memory isn't the best device to manage lots of passwords. However, we do need to remember SOME passwords - like the one to unlock your password manager, for instance. Understand what you are protecting and what type of password attack you are defending against (online, offline, etc) fully before using a tool like this.
 
 There are surely flaws with this approach. Please open issues to tell me what a fool I am for doing this or that, so I can hopefully improve it. Thanks!

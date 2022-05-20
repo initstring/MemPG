@@ -1,5 +1,8 @@
 """
 This contains the Generator class and any future sub-classes
+
+https://github.com/initstring/mempg
+MIT License
 """
 
 import secrets
@@ -20,7 +23,16 @@ fmt_options = {
         ],
     4: [
         "adjective noun verb-present adverb"
-    ]
+    ],
+    5: [
+        "noun verb-present adverb preposition noun"
+    ],
+    6: [
+        "adjective noun verb-present adverb preposition noun"
+    ],
+    7: [
+        "adjective noun verb-present adverb preposition verb-continuous noun"
+    ],
 }
 
 
@@ -33,6 +45,7 @@ class Generator:
 
     def __init__(self, length, add_num=False):
         self.add_num = add_num
+        self.phrase = ""
 
         # first select the format options for this length
         choices = fmt_options.get(length, None)
@@ -56,7 +69,7 @@ class Generator:
         for length in list_lengths:
             combos = combos * length
 
-        self.entropy = math.log2(combos)
+        self.entropy = int(math.log2(combos))
 
     def make_pass(self):
         """
