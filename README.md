@@ -49,7 +49,7 @@ The tool accepts three optional parameters:
   -p PHRASES, --phrases PHRASES How many phrases to generate. Default: 1
 ```
 
-Each run will generate a simply entropy calculation, based on the length of the input wordlists for each word selected.
+Each run will generate a simple entropy calculation, based on the length of the input wordlists for each word selected.
 
 ## Contributing
 
