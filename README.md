@@ -55,7 +55,7 @@ Each run will generate a simply entropy calculation, based on the length of the 
 
 Please open an issue to start a discussion on any major contributions. For any small fixes, just submit a PR. Thank you!
 
-Right now, I am particularly interesting in help with making the phrases sound more natural. This might include improving/curating some of the wordlists, as well as modifying or adding additional phrase formats as defined in `fmt_options` in `generators.py`.
+Right now, I am particularly interested in help with making the phrases sound more natural. This might include improving/curating some of the wordlists, as well as modifying or adding additional phrase formats as defined in `fmt_options` inside `generators.py`.
 
 ## Sources
 
