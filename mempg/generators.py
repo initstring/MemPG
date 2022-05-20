@@ -1,5 +1,8 @@
 """
 This contains the Generator class and any future sub-classes
+
+https://github.com/initstring/mempg
+MIT License
 """
 
 import secrets
