@@ -69,7 +69,7 @@ class Generator:
         for length in list_lengths:
             combos = combos * length
 
-        self.entropy = math.log2(combos)
+        self.entropy = int(math.log2(combos))
 
     def make_pass(self):
         """
