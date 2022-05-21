@@ -18,7 +18,7 @@ def parse_args():
     desc = "Generate easy-to-remember passphrases of variables lengths"
     parser = argparse.ArgumentParser(description=desc)
 
-    parser.add_argument("-l", "--length", type=int, default=6,
+    parser.add_argument("-l", "--length", type=int, default=4,
                         help="Length of passphrase to generate. Default: 4")
     parser.add_argument("-n", "--numbers", action="store_true", default=False,
                         help="Add 4 random digits to end. Default: False")
