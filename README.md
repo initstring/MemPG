@@ -44,7 +44,7 @@ mempg.sh -l4 -p 10
 The tool accepts three optional parameters:
 
 ```
-  -l LENGTH, --length LENGTH    Length of passphrase to generate. Default: 6
+  -l LENGTH, --length LENGTH    Length of passphrase to generate. Default: 4
   -n, --numbers                 Add random digits to end of phrase Default: False
   -p PHRASES, --phrases PHRASES How many phrases to generate. Default: 1
 ```
