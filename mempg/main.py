@@ -19,7 +19,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=desc)
 
     parser.add_argument("-l", "--length", type=int, default=6,
-                        help="Length of passphrase to generate. Default: 6")
+                        help="Length of passphrase to generate. Default: 4")
     parser.add_argument("-n", "--numbers", action="store_true", default=False,
                         help="Add 4 random digits to end. Default: False")
     parser.add_argument("-p", "--phrases", type=int, default=1,
